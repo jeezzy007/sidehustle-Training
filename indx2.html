@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form>
+<body style="background-color: green;">
+    <form onsubmit="alert('form submitted successfully')">
         <fieldset>
             <legend>Biodata</legend>
             <label for="fulltname">Full Name</label>
             <input type="text" name="fullname" id="fname"> <br>
             <label for="email">Email</label>
-            <input type="text" name="email" id="email"> <br>
+            <input type="text" name="email" id="email" required> <br>
             <label for="phone">Phone No</label>
             <input type="text" name="tel" id="phone"> <br>
             <label for="gender">Male</label>
@@ -32,7 +32,7 @@
                   </td>
             </table>
             <button type="submit" value="submit">SUBMIT</button>
-            
+
             
 
 

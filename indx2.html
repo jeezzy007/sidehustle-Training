@@ -4,27 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week 1 assessment</title>
+    <title>Simple Biodata Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: green;">
-    <form onsubmit="alert('form submitted successfully')">
-        <fieldset>
-            <legend>Biodata</legend>
-            <label for="fulltname">Full Name</label>
-            <input type="text" name="fullname" id="fname"> <br>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="example@gmail.com" required> <br>
-            <label for="phone">Phone No</label>
-            <input type="text" name="tel" id="phone"> <br>
-            <label for="gender">Male</label>
-            <input type="radio" name="gender" id="male" value="male"> 
-            <label for="gender">Female</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" placeholder="enter your password" > <br>
+<body>
+    <div class="container">
+    <div class="title"> REGISTRATION FORM </div>
+
+    <div class="formcontainer">
+    <form  action="#" onsubmit="myFunction()">
+
+        <div class="user-details">
+
         
-            <button type="submit">SUBMIT</button>
+            
+        <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder=" Enter your name" required>
+        </div>
+
+        <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder=" Enter your Email" required>
+        </div>
+
+        <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder=" Phone Number" required>
+        </div>
+
+        <div class="input-box"> 
+            <span class="details" for="password">Password</span>
+            <input type="text" placeholder="enter your password" required> 
+        </div>
+         
+        
+        
+        <div class="gender-details"> 
+            <span class="gender-title" for="gender">Male</span>
+            <input type="radio" name="gender" id="male" value="male">
+        </div> 
+
+        <div class="gender-details"> 
+            <span class="gender-title" for="gender">Female</span>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+            
+         
+
+         </form><div>
+        
+            
 
             
 
@@ -32,7 +66,20 @@
             
 
             
-        </fieldset>
+        
+    </div>
     </form>
+
+</div>
+</div>
+
+
+<script>
+    function myFunction(){
+        alert("The form was submitted");
+    }
+
+</script>
+
 </body>
 </html>

@@ -1,114 +1,251 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-body{
-
+  
+  
+  }
+  .main{
+  width: 100;
+  background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  
+  }
+  .navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+  
+  }
+  
+  .icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+  
+  
+  }
+  .logo{
+  color: #ff7200;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  
+  }
+  
+  .menu{
+  
+    width: 400px;
+    float: left;
+    height: 70px;
+  }
+  
+  ul{
+  
+    float: left;
     display: flex;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-
-}
-
-.container{
-max-width: 500px;
-width: 100%;
-background: #e0dde0;
-padding: 25px 30px;
-border-radius: 5px;
-
-}
-.container .title{
-font-size: 25px;
-font-weight: 500px;
-position: relative;
-
-
-}
-
-.container .title::before{
-content: '';
-position: absolute;
-height: 3px;
-width: 30px;
-left: 0;
-bottom: 0;
-background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-
-.container form .user-details{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
-    }
-    
-    form .user-details .input-box{
-    margin: 20px 0 12px;
-    width: calc(100%/2-20px);
-    
-    
-    }
-
-    .user-details .input-box .details{
-        font-weight: 500;
-        margin-bottom: 5px;
-        display:  block;
-
-    }
-
-    .user-details .input-box input{
-
-        height: 45px;
-        width: 50%;
-        outline: none;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        padding-left: 15px;
-        font-size: 16px;
-        border-bottom-width: 2px;
-        transition: all 0.3 sec ease;
-    }
-    .user-details .input-box input:focus
-    .user-details .input-box input:valid{
-
-        border-color: #9b59b6;
-    }
-    form .button{
-        height: 45px;
-        margin: 45px 0;
-
-
-    }
-
-    
-        
-        form .button input{
-        height: 100%;
-        width: 100%;
-        outline: none;
-        color: #fff;
-        border: none;
-        background: linear-gradient(135deg, #71b7e6, #9b59b6);
-        font-weight: 500;
-        font-size: 18px;
-        letter-spacing: 2px;
-        border-radius: 5px;
-        
-    }
-
-        form .button input:hover{
-
-            background:linear-gradient(135deg, #71b7e6, #9b59b6) ;
-
-
-        }
-        
-        
-
+  }
+  
+  ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+  }
+  
+  ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  
+  }
+  
+  ul li a:hover{
+  color: #ff7200;
+  
+  }
+  .search{
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+  }
+  
+  .srch {
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  margin-top: 13px;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  }
+  
+  .btn {
+  width: 100px;
+  height: 40px;
+  background: #ff7200;
+  border: 2px solid #ff7200;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  
+  }
+  
+  .btn:focus{
+  outline: none;
+  }
+  
+  .srch:focus{
+  outline: none;
+  
+  }
+  
+  .content{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  }
+  
+  .content .par{
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  }
+  
+  .content h1{
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  }
+  
+  
+  .dev{
+  color: #ff7200;
+  
+  }
+  
+  
+  
+  .content .cn{
+  width: 160px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  }
+  
+  
+  .content .cn a {
+  color: #000;
+  transition: .3s ease;
+  
+  }
+  
+  .cn:hover{
+  background-color: #fff;
+  
+  }
+  .form{
+  width: 250px;
+  height: 300px; 
+  background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%) ;
+  position: absolute;
+  top: 120px;
+  left: 870px;
+  border-radius: 25px;
+  padding: 30px;
+  float: right;
+  }
+  
+  .form h2{
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+  
+  }
+  
+  .form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 3opx;
+  font-family: Arial;
+  
+  
+  }
+  
+  .form input:focus{
+  
+    outline: none;
+  }
+  
+  ::placeholder{
+  color: #fff;
+  font-family: Arial;
+  
+  }
+  
+  .btnn{
+  width: 230px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+  }
+  
+  .btnn:hover{
+  background: #fff;
+  color: #ff7200;
+  
+  }
+  
+  
+  .btnn a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  }

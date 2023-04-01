@@ -33,7 +33,7 @@
             <p class="par"> Welcome to JeezyTech, home of web development training. <br> we specialise in training young individuals that are passionate about learning <br> Web Development as the need to learn a high income skill can not be overemphasized. <br> So join us today to secure a slot for FREE  </p>
             <button class="cn"><a href="#">JOIN US</a> </button>
         </div>
-        <div class="form">
+        <div class="form" onsubmit="myFunction()">
             <h2>Login Here</h2>
             <input type="email" placeholder="Enter your email" required>
             <input type="password" placeholder="Enter your password" required>
@@ -53,6 +53,10 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" ></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" > function myFunction(){
+        alert("The form was submitted");
+    }</script>
+   
+</script>
 </body>
 </html>
